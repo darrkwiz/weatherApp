@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+    </style>
+
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    
+    <header class="text-center p-3 text bg-dark">
+        <h1>Navan's WeatherApp</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-8 mx-auto text-center bg-dark mt-4 p-5 rounded">
+                <h1 id='w-location'></h1>
+                <ul id="w-details" class="list-group mt-3">
+                    <li class="list-group-item" id="w-temp"></li>
+                    <li class="list-group-item" id="w-desc"></li>
+                    <li class="list-group-item" id="w-pressure"></li>
+                </ul>
+                <hr>
+                <label for="changeCity" class="text-white">Change City</label>
+                <form id="form">
+                    <select id="changeCity">
+                        <option value="tongaat">Tongaat</option>
+                        <option value="nigel">Nigel</option>
+                        <option value="durban">Durban</option>
+                        <option value="cape town">Cape Town</option>
+                        <option value="johannesburg">Johannesburg</option>
+                        <option value="dubai">Dubai</option>
+                    </select>    
+                    
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container mt-5 text-center text-grey">
+            &copy;2020 darrkwiz
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <!-- Custom JS Scripts-->
+    <script src="weather.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+
+
+  </body>
+</html>
