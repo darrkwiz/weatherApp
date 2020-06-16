@@ -4,7 +4,6 @@ class UI{
         this.temp = document.getElementById('w-temp');
         this.desc = document.getElementById('w-desc');
         this.pressure = document.getElementById('w-pressure');
-        this.icon = document.getElementById('w-icon');
     }
 
     kelToCel(kel) {
@@ -12,9 +11,6 @@ class UI{
     }
 
     paint(weather){
-        console.log(weather);
-        this.location.textContent = weather.name;
-        this.icon.innerHTML = weather.description;
         this.desc.innerHTML = `Feels Like: ${this.kelToCel(weather.main.feels_like)} &deg;C`;
         this.temp.innerHTML = `Temperature: ${this.kelToCel(weather.main.temp)} &deg;C`;
         this.pressure.innerHTML = `Pressure: ${parseInt(this.kelToCel(weather.main.pressure))} %`;
